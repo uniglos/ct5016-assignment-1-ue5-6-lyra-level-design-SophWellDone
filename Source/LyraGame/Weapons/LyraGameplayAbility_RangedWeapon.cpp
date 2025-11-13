@@ -388,7 +388,7 @@ void ULyraGameplayAbility_RangedWeapon::TraceBulletsInCartridge(const FRangedWea
 
 	for (int32 BulletIndex = 0; BulletIndex < BulletsPerCartridge; ++BulletIndex)
 	{
-		const float BaseSpreadAngle = WeaponData->GetCalculatedSpreadAngle();
+		const float BaseSpreadAngle = 0.0f;
 		const float SpreadAngleMultiplier = WeaponData->GetCalculatedSpreadAngleMultiplier();
 		const float ActualSpreadAngle = BaseSpreadAngle * SpreadAngleMultiplier;
 
